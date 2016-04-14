@@ -1,0 +1,8 @@
+<<VOIP CONFIG FILE>>Version:2.0002
+<AUTOUPDATE CONFIG MODULE>
+Download Server IP :10.13.30.13
+Config File Name   :
+Download Protocol  :2
+Download Mode      :1
+Download Interval  :1
+<<END OF FILE>>
