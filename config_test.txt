@@ -1,0 +1,744 @@
+<<VOIP CONFIG FILE>>Version:2.0036                           
+
+<GLOBAL CONFIG MODULE>
+Static IP          :192.168.1.179
+Static NetMask     :255.255.255.0
+Static GateWay     :192.168.1.1
+Default Protocol   :2
+Primary DNS        :202.96.134.133
+Alter DNS          :202.96.128.68
+DHCP Mode          :1
+DHCP Dns           :1
+Domain Name        :
+Host Name          :FoxGate
+Pppoe Mode         :0
+HTL Start Port     :10000
+HTL Port Number    :200
+SNTP Server        :ntp.deps.ua
+Enable SNTP        :1
+Time Zone          :34
+Enable Daylight    :2
+SNTP Time Out      :60
+DayLight Shift Min :60
+DayLight Start Mon :3
+DayLight Start Week:5
+DayLight Start Wday:0
+DayLight Start Hour:2
+DayLight Start Min :0
+DayLight End Mon   :10
+DayLight End Week  :5
+DayLight End Wday  :0
+DayLight End Hour  :2
+DayLight End Min   :0
+MMI Set            :-1
+MTU Length         :1500
+Register WD Time   :0
+
+<LAN CONFIG MODULE>
+Lan Ip             :192.168.10.1
+Lan NetMask        :255.255.255.0
+Bridge Mode        :1
+
+<TELE CONFIG MODULE>
+Dial End With #    :1
+Dial Fixed Length  :0
+Fixed Length       :11
+Dial With Timeout  :1
+Dial Timeout value :5
+Dialpeer With Line :0
+Poll Sequence      :0
+Accept Any Call    :1
+Phone Prefix       :
+Local Area Code    :
+IP call network    :.
+--Port Config--    :
+P1 No Disturb      :0
+P1 Mute            :0
+P1 No Dial Out     :0
+P1 No Empty Calling:0
+P1 Enable CallerId :1
+P1 Forward Service :0
+P1 SIP TransNum    :
+P1 SIP TransAddr   :
+P1 SIP TransPort   :5060
+P1 CallWaiting     :1
+P1 CallTransfer    :1
+P1 Call3Way        :1
+P1 AutoAnswer      :0
+P1 No Answer Time  :20
+P1 Warm Line Time  :0
+P1 Extention No.   :
+P1 Auto HandDown   :0
+P1 Auto Handdown Ti:3
+P1 Hotline Num     :
+P1 Record Server   :
+P1 Enable Record   :0
+P1 Busy N/A Line   :0
+
+<DSP CONFIG MODULE>
+Signal Standard    :1
+Handdown Time      :200
+G729 Payload Length:1
+G723 Bit Rate      :1
+G722 Timestamps    :0
+VAD                :0
+Ring Type          :4
+Dtmf Payload Type  :101
+Disable Handfree   :0
+RTP PROBE          :0
+--Port Config--    :
+P1 Output Vol      :3
+P1 Input Vol       :3
+P1 HandFree Vol    :1
+P1 RingTone Vol    :1
+P1 Codec           :-1
+P1 Voice Record    :0
+P1 Record Playing  :1
+P1 UserDef Voice   :0
+P1 First Codec     :1
+P1 Second Codec    :15
+P1 Third Codec     :17
+P1 Forth Codec     :0
+P1 Fifth Codec     :-1
+P1 Sixth Codec     :-1
+
+<SIP CONFIG MODULE>
+SIP  Port          :5060
+Stun Address       :
+Stun Port          :3478
+Stun Effect Time   :50
+SIP  Differv       :0
+Extern Address     :
+Url Convert        :1
+Reg Retry Time     :30
+Strict BranchPrefix:1
+--SIP Line List--  :
+SIP1 Phone Number  :155
+SIP1 Display Name  :
+SIP1 Sip Name      :155
+SIP1 Register Addr :192.168.1.100
+SIP1 Register Port :5060
+SIP1 Register User :155
+SIP1 Register Pwd  :155
+SIP1 Register TTL  :60
+SIP1 Enable Reg    :1
+SIP1 Proxy Addr    :192.168.1.100
+SIP1 Proxy Port    :5060
+SIP1 Proxy User    :155
+SIP1 Proxy Pwd     :155
+SIP1 Signal Enc    :0
+SIP1 Signal Key    :
+SIP1 Media Enc     :0
+SIP1 Media Key     :
+SIP1 Local Domain  :
+SIP1 Fwd Service   :0
+SIP1 Ring Type     :0
+SIP1 Fwd Number    :0675611276
+SIP1 Hotline Number:
+SIP1 Enable Detect :0
+SIP1 Detect TTL    :60
+SIP1 Server Type   :0
+SIP1 User Agent    :FoxGate
+SIP1 PRACK         :0
+SIP1 KEEP AUTH     :0
+SIP1 Session Timer :0
+SIP1 Gruu          :0
+SIP1 DTMF Mode     :1
+SIP1 DTMF SIP-INFO :0
+SIP1 Use Stun      :0
+SIP1 Via Port      :1
+SIP1 Subscribe     :0
+SIP1 Sub Expire    :300
+SIP1 Single Codec  :0
+SIP1 CLIR          :0
+SIP1 Strict Proxy  :0
+SIP1 Direct Contact:0
+SIP1 History Info  :0
+SIP1 DNS SRV       :0
+SIP1 Transfer Expir:0
+SIP1 Ban Anonymous :0
+SIP1 Dial Without R:0
+SIP1 DisplayName Qu:0
+SIP1 Presence Mode :0
+SIP1 RFC Ver       :1
+SIP1 Signal Port   :0
+SIP1 Transport     :0
+SIP1 Use Mixer     :0
+SIP1 Mixer Uri     :
+SIP1 Long Contact  :0
+SIP1 Auto TCP      :0
+SIP1 Click to Talk :0
+SIP1 Mwi No.       :
+SIP1 Park No.      :
+SIP1 Help No.      :
+SIP2 Phone Number  :3206
+SIP2 Display Name  :
+SIP2 Sip Name      :
+SIP2 Register Addr :10.100.0.64
+SIP2 Register Port :5060
+SIP2 Register User :3206
+SIP2 Register Pwd  :Aaaaaaa11
+SIP2 Register TTL  :60
+SIP2 Enable Reg    :0
+SIP2 Proxy Addr    :10.100.0.64
+SIP2 Proxy Port    :5060
+SIP2 Proxy User    :3206
+SIP2 Proxy Pwd     :Aaaaaaa11
+SIP2 Signal Enc    :0
+SIP2 Signal Key    :
+SIP2 Media Enc     :0
+SIP2 Media Key     :
+SIP2 Local Domain  :
+SIP2 Fwd Service   :0
+SIP2 Ring Type     :0
+SIP2 Fwd Number    :0675611276
+SIP2 Hotline Number:
+SIP2 Enable Detect :0
+SIP2 Detect TTL    :60
+SIP2 Server Type   :0
+SIP2 User Agent    :Voip Phone 1.0
+SIP2 PRACK         :0
+SIP2 KEEP AUTH     :0
+SIP2 Session Timer :0
+SIP2 Gruu          :0
+SIP2 DTMF Mode     :1
+SIP2 DTMF SIP-INFO :0
+SIP2 Use Stun      :0
+SIP2 Via Port      :1
+SIP2 Subscribe     :0
+SIP2 Sub Expire    :300
+SIP2 Single Codec  :0
+SIP2 CLIR          :0
+SIP2 Strict Proxy  :0
+SIP2 Direct Contact:0
+SIP2 History Info  :0
+SIP2 DNS SRV       :0
+SIP2 Transfer Expir:0
+SIP2 Ban Anonymous :0
+SIP2 Dial Without R:0
+SIP2 DisplayName Qu:0
+SIP2 Presence Mode :0
+SIP2 RFC Ver       :1
+SIP2 Signal Port   :0
+SIP2 Transport     :0
+SIP2 Use Mixer     :0
+SIP2 Mixer Uri     :
+SIP2 Long Contact  :0
+SIP2 Auto TCP      :0
+SIP2 Click to Talk :0
+SIP2 Mwi No.       :
+SIP2 Park No.      :
+SIP2 Help No.      :
+
+<IAX2 CONFIG MODULE>
+Server   Address   :
+Server   Port      :4569
+User     Name      :
+User     Password  :
+User     Number    :
+Voice    Number    :0
+Voice    Text      :mail
+EchoTest Number    :1
+EchoTest Text      :echo
+Local    Port      :4569
+Enable   Register  :0
+Refresh  Time      :60
+Enable   G.729     :0
+
+<PPPoE CONFIG MODULE>
+Pppoe User         :user123
+Pppoe Password     :password
+Pppoe Service      :ANY
+Pppoe Ip Address   :
+
+<MMI CONFIG MODULE>
+Telnet Port        :23
+Web Port           :80
+Remote Control     :1
+Enable MMI Filter  :0
+Telnet Prompt      :
+--MMI Account--    :
+Account1 Name      :guest
+Account1 Pass      :Rhfrjpz,kz
+Account1 Level     :5
+Account2 Name      :adminis
+Account2 Pass      :Aaaaaaa1
+Account2 Level     :10
+
+<QOS CONFIG MODULE>
+Enable VLAN        :1
+Enable diffServ    :0
+DiffServ Value     :184
+VLAN ID            :1230
+802.1P Value       :0
+VLAN Recv Check    :1
+Data VLAN ID       :1230
+Data 802.1P Value  :0
+Diff Data Voice    :0
+Enable PVID        :0
+PVID Value         :0
+
+<DEBUG CONFIG MODULE>
+MGR Trace Level    :0
+SIP Trace Level    :0
+IAX Trace Level    :0
+Trace File Info    :0
+
+<AAA CONFIG MODULE>
+Enable Syslog      :0
+Syslog address     :0.0.0.0
+Syslog port        :514
+
+<ACCESS CONFIG MODULE>
+Enable In Access   :0
+Enable Out Access  :0
+
+<DHCP CONFIG MODULE>
+Enable DHCP Server :0
+Enable DNS Relay   :0
+DHCP Update Flag   :0
+TFTP  Server       :0.0.0.0
+--DHCP List--      :
+Item1 name         :lan
+Item1 Start Ip     :192.168.10.1
+Item1 End Ip       :192.168.10.30
+Item1 Param        :snmk=255.255.255.0:maxl=1440:rout=192.168.10.1:dnsv=192.168.10.1
+
+<NAT CONFIG MODULE>
+Enable Nat         :0
+Enable Ftp ALG     :1
+Enable H323 ALG    :0
+Enable PPTP ALG    :1
+Enable IPSec ALG   :1
+
+<PHONE CONFIG MODULE>
+Keypad Password    :247
+KeyLock Password   :123
+Enable KeyLock     :0
+LCD Logo           :PHONE NUMBER 155
+LCD Constrast      :4
+LCD Luminance      :1
+Backlight Off Time :30
+Time Display Style :0
+Display Time       :1
+Resolve Address    :
+MWI Number         :
+Phone Model        :VoIP Phone
+About Info         :
+Serivce URL        :
+--Function Key--   :
+Fkey1 Type         :1
+Fkey1 Value        :F_MWI
+Fkey1 Title        :
+Fkey2 Type         :0
+Fkey2 Value        :360
+Fkey2 Title        :Revenko
+Fkey3 Type         :0
+Fkey3 Value        :370
+Fkey3 Title        :Kozlov
+Fkey4 Type         :0
+Fkey4 Value        :363
+Fkey4 Title        :Beda
+Fkey5 Type         :0
+Fkey5 Value        :
+Fkey5 Title        :
+Fkey6 Type         :0
+Fkey6 Value        :
+Fkey6 Title        :
+Fkey7 Type         :0
+Fkey7 Value        :
+Fkey7 Title        :
+Fkey8 Type         :0
+Fkey8 Value        :
+Fkey8 Title        :
+Fkey9 Type         :0
+Fkey9 Value        :
+Fkey9 Title        :
+Fkey10 Type        :0
+Fkey10 Value       :
+Fkey10 Title       :
+Fkey11 Type        :0
+Fkey11 Value       :
+Fkey11 Title       :
+--Phone Book--     :
+Item1 Name         :test1
+Item1 Number       :123
+Item1 Ring         :0
+Item2 Name         :
+Item2 Number       :555
+Item2 Ring         :0
+Item3 Name         :
+Item3 Number       :371
+Item3 Ring         :0
+Item4 Name         :
+Item4 Number       :375
+Item4 Ring         :0
+Item5 Name         :
+Item5 Number       :351
+Item5 Ring         :0
+Item6 Name         :
+Item6 Number       :108
+Item6 Ring         :0
+Item7 Name         :
+Item7 Number       :368
+Item7 Ring         :0
+Item8 Name         :
+Item8 Number       :383
+Item8 Ring         :0
+Item9 Name         :
+Item9 Number       :343
+Item9 Ring         :0
+Item10 Name        :
+Item10 Number      :381
+Item10 Ring        :0
+Item11 Name        :
+Item11 Number      :379
+Item11 Ring        :0
+Item12 Name        :
+Item12 Number      :112
+Item12 Ring        :0
+Item13 Name        :
+Item13 Number      :388
+Item13 Ring        :0
+Item14 Name        :
+Item14 Number      :324
+Item14 Ring        :0
+Item15 Name        :
+Item15 Number      :309
+Item15 Ring        :0
+Item16 Name        :
+Item16 Number      :367
+Item16 Ring        :0
+Item17 Name        :
+Item17 Number      :337
+Item17 Ring        :0
+Item18 Name        :
+Item18 Number      :377
+Item18 Ring        :0
+Item19 Name        :
+Item19 Number      :336
+Item19 Ring        :0
+Item20 Name        :
+Item20 Number      :321
+Item20 Ring        :0
+Item21 Name        :
+Item21 Number      :326
+Item21 Ring        :0
+Item22 Name        :
+Item22 Number      :325
+Item22 Ring        :0
+Item23 Name        :
+Item23 Number      :318
+Item23 Ring        :0
+Item24 Name        :
+Item24 Number      :386
+Item24 Ring        :0
+Item25 Name        :
+Item25 Number      :362
+Item25 Ring        :0
+Item26 Name        :
+Item26 Number      :440
+Item26 Ring        :0
+Item27 Name        :
+Item27 Number      :342
+Item27 Ring        :0
+Item28 Name        :
+Item28 Number      :329
+Item28 Ring        :0
+Item29 Name        :
+Item29 Number      :424
+Item29 Ring        :0
+Item30 Name        :
+Item30 Number      :354
+Item30 Ring        :0
+Item31 Name        :
+Item31 Number      :334
+Item31 Ring        :0
+Item32 Name        :
+Item32 Number      :703
+Item32 Ring        :0
+Item33 Name        :
+Item33 Number      :422
+Item33 Ring        :0
+Item34 Name        :
+Item34 Number      :365
+Item34 Ring        :0
+Item35 Name        :
+Item35 Number      :310
+Item35 Ring        :0
+Item36 Name        :
+Item36 Number      :300
+Item36 Ring        :0
+Item37 Name        :
+Item37 Number      :301
+Item37 Ring        :0
+Item38 Name        :
+Item38 Number      :315
+Item38 Ring        :0
+Item39 Name        :
+Item39 Number      :384
+Item39 Ring        :0
+Item40 Name        :
+Item40 Number      :333
+Item40 Ring        :0
+Item41 Name        :
+Item41 Number      :304
+Item41 Ring        :0
+Item42 Name        :
+Item42 Number      :915
+Item42 Ring        :0
+Item43 Name        :
+Item43 Number      :332
+Item43 Ring        :0
+Item44 Name        :
+Item44 Number      :350
+Item44 Ring        :0
+Item45 Name        :
+Item45 Number      :914
+Item45 Ring        :0
+Item46 Name        :
+Item46 Number      :389
+Item46 Ring        :0
+Item47 Name        :
+Item47 Number      :330
+Item47 Ring        :0
+Item48 Name        :
+Item48 Number      :702
+Item48 Ring        :0
+Item49 Name        :
+Item49 Number      :444
+Item49 Ring        :0
+Item50 Name        :
+Item50 Number      :344
+Item50 Ring        :0
+Item51 Name        :
+Item51 Number      :361
+Item51 Ring        :0
+Item52 Name        :
+Item52 Number      :399
+Item52 Ring        :0
+Item53 Name        :
+Item53 Number      :335
+Item53 Ring        :0
+Item54 Name        :
+Item54 Number      :339
+Item54 Ring        :0
+Item55 Name        :
+Item55 Number      :916
+Item55 Ring        :0
+Item56 Name        :
+Item56 Number      :345
+Item56 Ring        :0
+Item57 Name        :
+Item57 Number      :306
+Item57 Ring        :0
+Item58 Name        :
+Item58 Number      :704
+Item58 Ring        :0
+Item59 Name        :
+Item59 Number      :317
+Item59 Ring        :0
+Item60 Name        :
+Item60 Number      :359
+Item60 Ring        :0
+Item61 Name        :
+Item61 Number      :419
+Item61 Ring        :0
+Item62 Name        :
+Item62 Number      :392
+Item62 Ring        :0
+Item63 Name        :
+Item63 Number      :391
+Item63 Ring        :0
+Item64 Name        :
+Item64 Number      :320
+Item64 Ring        :0
+Item65 Name        :
+Item65 Number      :358
+Item65 Ring        :0
+Item66 Name        :
+Item66 Number      :709
+Item66 Ring        :0
+Item67 Name        :
+Item67 Number      :417
+Item67 Ring        :0
+Item68 Name        :
+Item68 Number      :302
+Item68 Ring        :0
+Item69 Name        :
+Item69 Number      :435
+Item69 Ring        :0
+Item70 Name        :
+Item70 Number      :410
+Item70 Ring        :0
+Item71 Name        :
+Item71 Number      :338
+Item71 Ring        :0
+Item72 Name        :
+Item72 Number      :415
+Item72 Ring        :0
+Item73 Name        :
+Item73 Number      :416
+Item73 Ring        :0
+Item74 Name        :
+Item74 Number      :372
+Item74 Ring        :0
+Item75 Name        :
+Item75 Number      :316
+Item75 Ring        :0
+Item76 Name        :
+Item76 Number      :363
+Item76 Ring        :0
+Item77 Name        :
+Item77 Number      :425
+Item77 Ring        :0
+Item78 Name        :
+Item78 Number      :409
+Item78 Ring        :0
+Item79 Name        :
+Item79 Number      :406
+Item79 Ring        :0
+Item80 Name        :
+Item80 Number      :348
+Item80 Ring        :0
+Item81 Name        :
+Item81 Number      :405
+Item81 Ring        :0
+Item82 Name        :
+Item82 Number      :404
+Item82 Ring        :0
+Item83 Name        :
+Item83 Number      :407
+Item83 Ring        :0
+Item84 Name        :
+Item84 Number      :357
+Item84 Ring        :0
+Item85 Name        :
+Item85 Number      :432
+Item85 Ring        :0
+Item86 Name        :
+Item86 Number      :423
+Item86 Ring        :0
+Item87 Name        :
+Item87 Number      :356
+Item87 Ring        :0
+Item88 Name        :
+Item88 Number      :434
+Item88 Ring        :0
+Item89 Name        :
+Item89 Number      :366
+Item89 Ring        :0
+Item90 Name        :
+Item90 Number      :395
+Item90 Ring        :0
+Item91 Name        :
+Item91 Number      :322
+Item91 Ring        :0
+Item92 Name        :
+Item92 Number      :431
+Item92 Ring        :0
+Item93 Name        :
+Item93 Number      :307
+Item93 Ring        :0
+Item94 Name        :
+Item94 Number      :429
+Item94 Ring        :0
+Item95 Name        :
+Item95 Number      :349
+Item95 Ring        :0
+Item96 Name        :
+Item96 Number      :341
+Item96 Ring        :0
+Item97 Name        :
+Item97 Number      :364
+Item97 Ring        :0
+Item98 Name        :
+Item98 Number      :303
+Item98 Ring        :0
+Item99 Name        :
+Item99 Number      :308
+Item99 Ring        :0
+Item100 Name       :
+Item100 Number     :412
+Item100 Ring       :0
+Item101 Name       :
+Item101 Number     :347
+Item101 Ring       :0
+Item102 Name       :
+Item102 Number     :311
+Item102 Ring       :0
+Item103 Name       :
+Item103 Number     :314
+Item103 Ring       :0
+Item104 Name       :
+Item104 Number     :346
+Item104 Ring       :0
+Item105 Name       :
+Item105 Number     :305
+Item105 Ring       :0
+Item106 Name       :
+Item106 Number     :385
+Item106 Ring       :0
+Item107 Name       :
+Item107 Number     :437
+Item107 Ring       :0
+Item108 Name       :
+Item108 Number     :352
+Item108 Ring       :0
+Item109 Name       :
+Item109 Number     :441
+Item109 Ring       :0
+Item110 Name       :
+Item110 Number     :420
+Item110 Ring       :0
+Item111 Name       :
+Item111 Number     :331
+Item111 Ring       :0
+Item112 Name       :
+Item112 Number     :369
+Item112 Ring       :0
+Item113 Name       :
+Item113 Number     :370
+Item113 Ring       :0
+Item114 Name       :
+Item114 Number     :378
+Item114 Ring       :0
+Item115 Name       :
+Item115 Number     :382
+Item115 Ring       :0
+Item116 Name       :
+Item116 Number     :319
+Item116 Ring       :0
+Item117 Name       :
+Item117 Number     :387
+Item117 Ring       :0
+Item118 Name       :
+Item118 Number     :355
+Item118 Ring       :0
+Item119 Name       :test12
+Item119 Number     :123123
+Item119 Ring       :0
+Memo Number        :0
+
+<AUTOUPDATE CONFIG MODULE>
+Download Username  :
+Download password  :
+Download Server IP :10.13.30.11
+Config File Name   :
+Config File Key    :
+Download Protocol  :2
+Download Mode      :1
+Download Interval  :1
+DHCP Option 66     :0
+
+<VPN CONFIG MODULE>
+VPN mode           :-1
+L2TP LNS IP        :
+L2TP User Name     :
+L2TP Password      :
+Enable VPN Tunnel  :0
+VPN Server IP      :0.0.0.0
+VPN Server Port    :80
+Server Group ID    :VPN
+Server Area Code   :12345
+<<END OF FILE>>
